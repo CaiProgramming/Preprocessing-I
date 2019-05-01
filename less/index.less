@@ -78,7 +78,7 @@ html, body {
   height: 100%;
 }
 body{
-	width: 800px;
+	max-width: 800px;
 	line-height: 1.5;
 article{
 	display: flex
@@ -149,7 +149,7 @@ footer{
 .whist{
 	text-align: center;
 	.flex();
-	width: 400px;
+	max-width: 400px;
 	padding-bottom: 20px;
 }
 li{
@@ -159,9 +159,25 @@ li{
 	text-align: center;
 	border-bottom: 1px black solid;
 }
-	@media  (max-width: 800px) {
+	@media screen and  (max-width: 600px) {
+		body{
+			width: 100% !important;
+		}
 		section{
+			max-width: 100% !important;
+		}
+		article{
 			flex-wrap: wrap;
+		}
+		p{
+			width: 100%
+		}
+		.rImage{
+			width: 100%;
+
+		}
+		.whist{
+			width: 100%
 		}
 	}
 }

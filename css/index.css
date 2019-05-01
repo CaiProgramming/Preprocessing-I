@@ -140,7 +140,7 @@ body {
   height: 100%;
 }
 body {
-  width: 800px;
+  max-width: 800px;
   line-height: 1.5;
 }
 body article {
@@ -216,7 +216,7 @@ body .whist {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 400px;
+  max-width: 400px;
   padding-bottom: 20px;
 }
 body li {
@@ -226,8 +226,23 @@ body li {
   text-align: center;
   border-bottom: 1px black solid;
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 600px) {
+  body body {
+    width: 100% !important;
+  }
   body section {
+    max-width: 100% !important;
+  }
+  body article {
     flex-wrap: wrap;
+  }
+  body p {
+    width: 100%;
+  }
+  body .rImage {
+    width: 100%;
+  }
+  body .whist {
+    width: 100%;
   }
 }
