@@ -8,12 +8,19 @@
 @ContentWidth: 1000px;
 @textColor: black;
 @textColorHover: #B3AB9D;
+@bordercolors: #ADA1B3;
 .flex() {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
+.padding(){
+	padding: 25px;
 
+}
+.border(){
+		border-radius: 5%;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -66,22 +73,27 @@ table {
 
 html, body {
 	.flex();
+
 	margin: 0px;
   height: 100%;
 }
+body{
+	width: 800px;
+	line-height: 1.5;
 article{
-	display: flex;
+	display: flex
 }
 section{
 .flex();
- margin: 0px;
+ background-color: #E0FFF0;
+  margin: 10px;
+	padding: 10px;
  max-width: @ContentWidth;
 }
 nav{
-	width: 100%;
 	display: flex;
+	width: 100%;
 	justify-content: space-between;
-
 
 }
 a{
@@ -91,13 +103,65 @@ a{
 		color:@textColorHover;
 	}
 }
+h1{
+	.padding();
+	font-size: 50px;
+	font-weight: 100;
+}
+h2{
+	.padding();
+	font-size: 30px;
+	font-weight: 100;
+}
+p{
+	.padding();
+	.flex();
+}
+footer{
+	.flex();
 
+	.padding();
+	.border();
+	width: 100%;
+}
 .mainContent{
- width: 800px;
+ .border();
+ width: 100%;
  align-items:  flex-start;
+ flex-wrap: wrap;
  background-color: @backgroundsec;
 }
 .rImage{
-	padding: 25px;
+.border();
+.padding();
 	max-height: 350px;
+
+}
+
+.pMain{
+	.border();
+	background-color: @bordercolors;
+}
+.bottom{
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.whist{
+	text-align: center;
+	.flex();
+	width: 400px;
+	padding-bottom: 20px;
+}
+li{
+	list-style-type: none;
+	padding: 10px 0px;
+	text-decoration: none;
+	text-align: center;
+	border-bottom: 1px black solid;
+}
+	@media  (max-width: 800px) {
+		section{
+			flex-wrap: wrap;
+		}
+	}
 }
