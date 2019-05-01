@@ -106,7 +106,7 @@ section {
 }
 body {
   line-height: 1;
-  background-color: #FFFDF9;
+  background-color: #FFFDFA;
 }
 ol,
 ul {
@@ -149,10 +149,24 @@ section {
   margin: 0px;
   max-width: 1000px;
 }
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: #B3AB9D;
+}
 .mainContent {
   width: 800px;
-  background-color: #E8E3D1;
+  align-items: flex-start;
+  background-color: #C4B4CC;
 }
 .rImage {
+  padding: 25px;
   max-height: 350px;
 }
