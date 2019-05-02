@@ -1,1 +1,251 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: #FFFDFA;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  height: 100%;
+}
+body {
+  max-width: 800px;
+  line-height: 1.5;
+  font-family: 'Oswald', sans-serif;
+}
+body article {
+  display: flex;
+}
+body section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E0FFF0;
+  margin: 10px;
+  padding: 10px;
+  max-width: 1000px;
+}
+body nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+body a:hover {
+  color: #B3AB9D;
+}
+body h1 {
+  padding: 25px;
+  font-size: 50px;
+  font-weight: 100;
+}
+body h2 {
+  padding: 25px;
+  font-size: 30px;
+  font-weight: 100;
+}
+body p {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  border-radius: 5%;
+  width: 100%;
+}
+body .mainContent {
+  border-radius: 5%;
+  width: 100%;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: #C4B4CC;
+}
+body .rImage {
+  border-radius: 5%;
+  padding: 25px;
+  max-height: 350px;
+}
+body .pMain {
+  border-radius: 5%;
+  background-color: #ADA1B3;
+}
+body .bottom {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+body .whist {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  padding-bottom: 20px;
+}
+body li {
+  list-style-type: none;
+  padding: 10px 0px;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px black solid;
+}
+@media screen and (max-width: 600px) {
+  body body {
+    width: 100% !important;
+    font-family: 'Quicksand', sans-serif !important;
+  }
+  body section {
+    max-width: 100% !important;
+  }
+  body article {
+    flex-wrap: wrap;
+    font-family: 'Quicksand', sans-serif !important;
+  }
+  body p {
+    width: 100%;
+  }
+  body .rImage {
+    width: 100%;
+  }
+  body .whist {
+    width: 100%;
+  }
+}
